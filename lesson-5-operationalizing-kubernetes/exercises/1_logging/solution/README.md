@@ -1,1 +1,0 @@
-Health check queries are being made by the Kubernetes cluster. A successful health check means that the container is running as expected and provides a signal to the Kubernetes cluster that the service is running properly.

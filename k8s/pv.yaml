@@ -1,0 +1,14 @@
+apiVersion: v1
+kind: PersistentVolume
+metadata:
+  name: postgresql-pv
+spec:
+  capacity:
+    storage: 8Gi   # Ensure it matches PVC request
+  accessModes:
+    - ReadWriteOnce
+  persistentVolumeReclaimPolicy: Retain
+  storageClassName: gp2
+  hostPath:
+    path: "/Users/brajeshanand/repos/cd12355-microservices-kubernetes-cloud-devops/k8s"  # Change this path as needed
+
